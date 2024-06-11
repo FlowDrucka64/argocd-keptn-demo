@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: simplenode
-        image: "grabnerandi/simplenodeservice:3.0.2"
+        image: "grabnerandi/simplenodeservice:4.0.2"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
@@ -90,7 +90,7 @@ spec:
           requests:
             cpu: 100m
             memory: 200Mi
-      - name: heckoproxy
+      - name: heckoproxy  
         image: ghcr.io/heckelmann/workshop-registry/heckoproxy:v0.0.1
         ports:
         - name: promproxy
